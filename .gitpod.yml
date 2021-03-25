@@ -1,0 +1,16 @@
+image: 
+  file: .gitpod.Dockerfile
+
+tasks:
+  # - init: /usr/bin/start-vnc-session.sh
+  - command: zsh
+  # - init: gh auth login
+  - command: cd /usr/local/Telegram/ && ./Telegram
+
+# Ports to expose on workspace startup
+ports:
+  - port: 5900
+    onOpen: ignore
+  - port: 6080
+    onOpen: open-preview
+
