@@ -1,4 +1,4 @@
-FROM baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-anaconda3-2020-11
+FROM baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-anaconda3-2020-11-gh
 
 RUN sudo apt update | tee -a /tmp/apt.log \
  && sudo apt install -y \
